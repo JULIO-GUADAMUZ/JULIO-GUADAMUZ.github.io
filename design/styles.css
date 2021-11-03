@@ -1,0 +1,147 @@
+/*INICIO FORMATO*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body{
+  display: flex;
+  justify-content: center;
+  margin:0px;
+  width: 100%;
+  background-color: hsl(225, 100%, 90%);
+}
+
+div.suscripcion {
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: start;
+  width: 350px;
+  border: solid 0px black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 5%;
+position: absolute;
+
+}
+
+.imagen {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.textoinicial {
+  text-align: center;
+  padding: 10px 20px 5px 20px;
+}
+
+.textlong {
+  color: rgba(0, 0, 0, 0.39);
+  font-weight: 700;
+  margin: 20px;
+  font-size: 14px;
+}
+.cajita {
+  margin: 0 20px 30px 20px;
+  padding: 20px;
+  background-color: hsl(245, 75%, 97%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-rows: 20px 30px;
+}
+.type_plan {
+  font-weight: 900;
+  font-size: 14px;
+  grid-area: 1/2/2/3;
+  text-align: start;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.price {
+  grid-area: 2/2/3/3;
+  text-align: start;
+  margin-left: 10px;
+  align-self: center;
+  font-size: 14px;
+}
+.change {
+  grid-area: 1/3/4/4;
+  align-self: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+}
+
+.process {
+  text-align: center;
+  margin: 18px;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 8px 30px rgba(99, 21, 202, 0.247);
+  cursor: pointer;
+}
+.textpro {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cancel {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+}
+
+/* FIN FORMATO*/
+
+/*INICIO ANIMACIÓN*/
+
+.process:hover {
+  animation-name: colorfondo;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorfondo {
+  100% {
+    background-color: hsl(245, 75%, 70%);
+  }
+}
+
+.change:hover {
+  animation-name: colorchange;
+  animation-fill-mode: forwards;
+}
+@keyframes colorchange {
+  100% {
+    color: hsl(245, 75%, 70%);
+  }
+}
+
+.cancel:hover {
+  animation-name: colorcancel;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorcancel {
+  100% {
+    color: black;
+  }
+}
+
+/*FIN ANIMACIONES*/
+.fondo2{
+  position: absolute;
+  width: 100%;
+  transform: rotate(180deg);
+  bottom: 0px;
+
+}
